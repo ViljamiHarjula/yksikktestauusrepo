@@ -16,12 +16,22 @@ namespace hetu.Tests
         public void HeTuOkTest()
         {
             hetuntarkistus t = new hetuntarkistus();
-            string hetu = "12121233";
+            string hetu = "121288-1233";
             bool expected = true;
             bool actual = t.HeTuOk(hetu);
             Assert.AreEqual(expected, actual, "Joku pielessä, pitäisi olla ok hetu");
             // klljll
             //Assert.Fail();
+        }
+        [TestMethod()]
+        public void IsoPieniKirjainOngelma()
+        {
+            hetuntarkistus t = new hetuntarkistus();
+            string hetu = "010199-123Y";
+            bool expected = true;
+            bool actual = t.HeTuOk(hetu);
+            Assert.AreEqual(expected, actual, "Vääräkuukausi kelpaa");
+
         }
     }
 }
