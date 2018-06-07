@@ -16,7 +16,7 @@ namespace hetu.Tests
         public void HeTuOkTest()
         {
             hetuntarkistus t = new hetuntarkistus();
-            string hetu = "121288A1233";
+            string hetu = "12121233";
             bool expected = true;
             bool actual = t.HeTuOk(hetu);
             Assert.AreEqual(expected, actual, "Joku pielessä, pitäisi olla ok hetu");
