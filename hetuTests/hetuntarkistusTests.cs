@@ -21,7 +21,7 @@ namespace hetu.Tests
             bool actual = t.HeTuOk(hetu);
             Assert.AreEqual(expected, actual, "Joku pielessä, pitäisi olla ok hetu");
             // klljll
-            Assert.Fail();
+            //Assert.Fail();
         }
     }
 }
